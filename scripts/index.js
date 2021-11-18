@@ -25,7 +25,7 @@ function repositionCross() {
         crosses[i].style.display = "block"
         crosses[i].style.top = randomPosition(-25, 100)
         crosses[i].style.left = randomPosition(-25, 100)
-        var size = randomPosition(10, 30)
+        var size = randomPosition(5, 20)
         crosses[i].style.width = size
         crosses[i].style.height = size
         crosses[i].style.transform = "rotate(" + randomAngle(-10, 10) + ")"
@@ -60,10 +60,6 @@ function repositionDot() {
     }
 }
 
-function repositionEverything(){
-    repositionCross()
-    repositionRectangle()
-    repositionDot()
-}
-
-setInterval(repositionEverything, 100);
+setInterval(repositionCross, 120);
+setInterval(repositionRectangle, 100);
+setInterval(repositionDot, 150);
