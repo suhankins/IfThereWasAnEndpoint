@@ -13,7 +13,7 @@ function randomAngle(min, max) {
 function repositionCross() {
     for (let i = 0; i < crosses.length; i++) {
 
-        if (Math.random() < 0.25) {
+        if (Math.random() < 0.1) {
             if (crosses[i].style.display == "block") {
                 crosses[i].src = "images/cross_" + Math.floor(Math.random() * 4) + ".svg"
                 continue
@@ -34,7 +34,7 @@ function repositionCross() {
 
 function repositionRectangle() {
     for (let i = 0; i < rectangles.length; i++) {
-        if (Math.random() < 0.1) {
+        if (Math.random() < 0.2) {
             rectangles[i].style.display = "block"
         } else {
             rectangles[i].style.display = "none"

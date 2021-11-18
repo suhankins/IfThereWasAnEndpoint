@@ -37,6 +37,14 @@ body {
     background-color: black;
 }
 
+.rectangle-dashed {
+    width: 100%;
+    border-top-style: dashed;
+    border-color: black;
+    background: none;
+    border-width: 16px;
+}
+
 .dot {
     border-radius: 50%;
     border-color: black;
