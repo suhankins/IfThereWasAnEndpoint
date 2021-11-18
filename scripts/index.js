@@ -18,17 +18,17 @@ function repositionCross() {
                 crosses[i].src = "images/cross_" + Math.floor(Math.random() * 4) + ".svg"
                 continue
             }
-
-            crosses[i].style.display = "block"
-            crosses[i].style.top = randomPosition(-25, 100)
-            crosses[i].style.left = randomPosition(-25, 100)
-            var size = randomPosition(10, 30)
-            crosses[i].style.width = size
-            crosses[i].style.height = size
-            crosses[i].style.transform = "rotate(" + randomAngle(-10, 10) + ")"
         } else {
             crosses[i].style.display = "none"
         }
+
+        crosses[i].style.display = "block"
+        crosses[i].style.top = randomPosition(-25, 100)
+        crosses[i].style.left = randomPosition(-25, 100)
+        var size = randomPosition(10, 30)
+        crosses[i].style.width = size
+        crosses[i].style.height = size
+        crosses[i].style.transform = "rotate(" + randomAngle(-10, 10) + ")"
     }
 }
 
